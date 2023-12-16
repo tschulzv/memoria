@@ -1,3 +1,4 @@
+// Proyecto Final - Eliana Sanchez y Tania Schulz
 const endpoint = 'https://random-word-api.herokuapp.com/word?length=5';
 // ELEMENTOS
 const FACIL = document.getElementById("facil");
@@ -86,6 +87,7 @@ function intentar(){
     if (INTENTO == palabra) {
         puntos++;
         terminar("Acertaste!");
+        PUNTOS.innerHTML = puntos;
     }
     else{
         intentos--;
