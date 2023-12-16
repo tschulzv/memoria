@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad&display=swap');
+
+body {
+  background-color: #CDCCE0;
+  font-family: 'Afacad';
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+}
+
+h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 30px auto 5px;
+  color: #2E2E4D;
+}
+
+h2 {
+  font-size: 25px;
+  color: #4b4b4e;
+  margin: 5px auto;
+}
+
+hr {
+  position: relative;
+  border: none;
+  height: 5px;
+  background: #2E2E4D;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.contenedor {
+  background-color: white;
+  max-width: 900px;
+  width: 100%;
+  height: 380px;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 14px 14px 0 #2E2E4D;
+  padding: 20px; 
+}
+
+#niveles{
+  display: block;
+}
+
+#juego{
+  display: none;
+}
+
+#botones{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#entrada {
+  width: 80%;
+  margin: 20px auto;
+}
+
+input {
+  width: 100%;
+  max-width: 300px;
+  height: 30px;
+  border: 2px solid #110f0fc5;
+  font-size: 15px;
+  border-radius: 2px;
+}
+
+button {
+  width: 100%;
+  max-width: 200px;
+  height: 30px;
+  font-family: 'Afacad';
+  color: aliceblue;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #2E2E4D;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+#intentos {
+  margin: 20px auto;
+  text-align: center;
+  font-size: 25px;
+}
+
+#fin{
+  display: none;
+  justify-content: center; 
+  align-items: center;
+}
+
+#puntaje, #intentos {
+  margin: 10px auto;
+}
+
+/* Para el telefono*/
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  #separador {
+    font-size: 40px;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  #contenedor {
+    box-shadow: none;
+  }
+
+  #entrada, input, button, #intentos {
+    width: 100%;
+  }
+
+  input {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+}

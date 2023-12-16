@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="contenedor" id="niveles">
+            <h1>Desafía tu memoria</h1>
+            <hr>
+            <h2>Selecciona el nivel</h2>
+            <div id="botones">
+                <button id="facil">Facil</button>
+                <button id="normal">Normal</button>
+                <button id="dificil">Dificil</button>
+            </div>
+        </div>
+        <div class="contenedor" id="juego">
+            <h1>Memoriza la palabra</h1>
+            <hr>
+            <h2 id="palabra"></h2>
+            <div id="entrada">
+                <input class="item" id="word" type="text" maxlength="10" placeholder="Ingresa la palabra" />
+                <button class="item" id="intentar">Intentar</button>
+            </div>
+            <div id="datos">
+                <p id="intentos">
+                    <span>Vidas: </span>
+                    <span id="num-intentos">5</span></p>
+                <p id="puntaje">
+                    <span>Puntaje: </span>
+                    <span id="num-puntos">0</span></p>
+            </div>
+            <div id="fin">
+                <h2 id="mensaje-final"></h2>
+                <button id="reiniciar">SIGUIENTE</button>                
+            </div>
+        </div>
+    </body>
+</html>
